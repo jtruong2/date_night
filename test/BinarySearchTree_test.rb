@@ -1,6 +1,6 @@
 gem 'minitest', '~> 5.0'
 require 'minitest/autorun'
-require 'minitest/pride'
+require 'minitest/emoji'
 require_relative 'BinarySearchTree'
 
 class BinarySearchTreeTest < Minitest::Test
@@ -127,7 +127,8 @@ class BinarySearchTreeTest < Minitest::Test
     tree.insert_1(45, 'Animals United')
     assert_equal 1, tree.depth_of(45)
   end
-
+end
+=begin
   def test_nil_if_cant_find_depth
     skip
     tree = BinarySearchTree.new
@@ -155,3 +156,4 @@ class BinarySearchTreeTest < Minitest::Test
     assert_equal 50, tree.min
   end
 end
+=end
