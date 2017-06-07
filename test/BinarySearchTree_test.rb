@@ -119,7 +119,8 @@ class BinarySearchTreeTest < Minitest::Test
     tree.insert_1(45, 'Animals United')
     refute tree.root.include?(60)
   end
-
+end
+=begin
   def test_can_find_depth
     skip
     tree = BinarySearchTree.new
